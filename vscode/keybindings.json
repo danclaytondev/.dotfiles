@@ -1,0 +1,48 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+enter",
+        "command": "python.execInTerminal",
+        "when": "editorTextFocus"
+    },
+    // Sidebar
+    {
+        "key": "cmd+k cmd+m",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+k cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "cmd+k cmd+x",
+        "command": "workbench.extensions.action.showInstalledExtensions"
+    },
+    {
+        "key": "cmd+e cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "cmd+m cmd+w",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+    },
+    {
+        "key":     "cmd+t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key":     "cmd+t",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when":    "terminalFocus"
+    },
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "j",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "j"
+    }
+]

@@ -1,0 +1,52 @@
+{
+    // Font
+    "editor.fontFamily": "'Fira Code', Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.9,
+    // Colours
+    "workbench.colorTheme": "One Dark Pro",
+    
+    // Code Suggestions
+    "editor.quickSuggestionsDelay": 30,
+    "editor.suggestFontSize": 16,
+    "editor.suggestLineHeight": 30,
+    // --
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.sideBar.location": "right",
+
+    // When I accidentally hit copy without selecting anything and it overrides my clipboard
+    "editor.emptySelectionClipboard": false,
+    "workbench.action.quickOpenPreviousEditor":true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path" : "$HOME/.vimrc",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        }
+],
+"extensions.ignoreRecommendations": true,
+"vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+"vscode-neovim.neovimInitVimPaths.darwin": "/Users/daniel.clayton/.config/nvim/init.vim",
+"[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[python]": {
+    "editor.formatOnType": true
+},
+"css.validate": false,
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+},
+"extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+}
+}
