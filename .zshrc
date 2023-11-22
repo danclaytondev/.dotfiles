@@ -53,3 +53,8 @@ alias gd="git diff"
 alias gds="git diff --staged"
 
 export PATH="/Users/daniel.clayton/.local/bin:$PATH"
+
+woosh() {
+  git checkout -b $1 && git push -u origin HEAD
+}
+
