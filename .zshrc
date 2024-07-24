@@ -42,6 +42,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+source "$HOME/.rye/env"
+
 alias escalate="/Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add"
 alias deescalate="/Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove"
 
