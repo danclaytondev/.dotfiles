@@ -25,6 +25,9 @@ ln -s ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 create_symlink .zshrc
 create_symlink .zprofile
 
+#git
+create_synlink .gitconfig
+
 # vscode
 ln -sf $(pwd)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -sf $(pwd)/vscode/settings.json /Users/daniel.clayton/Library/Application\ Support/Code/User/settings.json
