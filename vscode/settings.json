@@ -22,14 +22,6 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path" : "$HOME/.vimrc",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<esc>"]
-        }
-],
 "extensions.ignoreRecommendations": true,
 "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
 "vscode-neovim.neovimInitVimPaths.darwin": "/Users/daniel.clayton/.config/nvim/init.vim",
@@ -48,5 +40,10 @@
 },
 "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-}
+},
+"vscode-neovim.compositeKeys": {
+    "jj": {
+        "command": "vscode-neovim.escape",
+    },
+},
 }
