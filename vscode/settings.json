@@ -46,4 +46,7 @@
         "command": "vscode-neovim.escape",
     },
 },
+"files.associations": {
+    "*.tmpl": "html"
+  }
 }
