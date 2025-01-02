@@ -21,6 +21,10 @@ echo "Creating configuration symlinks..."
 mkdir -p $HOME/.config/nvim
 create_symlink .config/nvim/init.vim
 
+# ghostty
+mkdir -p $HOME/.config/ghostty
+create_symlink .config/ghostty/config
+
 # zsh
 create_symlink .zshrc
 create_symlink .zprofile
