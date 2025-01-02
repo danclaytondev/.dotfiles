@@ -19,14 +19,14 @@ echo "Creating configuration symlinks..."
 
 # neovim
 mkdir -p $HOME/.config/nvim
-ln -s ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+create_symlink .config/nvim/init.vim
 
 # zsh
 create_symlink .zshrc
 create_symlink .zprofile
 
 #git
-create_synlink .gitconfig
+create_symlink .gitconfig
 
 # vscode
 ln -sf $(pwd)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
