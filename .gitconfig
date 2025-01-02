@@ -2,5 +2,6 @@
 	defaultBranch = main
 [core]
 	editor = vim
+	excludesfile = ~/.dotfiles/.gitignore_global
 [alias]
 	undo = reset --mixed HEAD^
