@@ -34,7 +34,7 @@ create_symlink .gitconfig
 
 # vscode
 ln -sf $(pwd)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -sf $(pwd)/vscode/settings.json /Users/daniel.clayton/Library/Application\ Support/Code/User/settings.json
+ln -sf $(pwd)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 
 
