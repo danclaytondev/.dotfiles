@@ -1,0 +1,10 @@
+brew "eza"
+cask "ghostty"
+cask "font-fira-code"
+brew "go"
+brew "neovim"
+
+cask "rectangle"
+brew "ripgrep"
+brew "duckdb"
+brew "uv"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 echo "Check zsh is the default shell first before running"
 # see: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
