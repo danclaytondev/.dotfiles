@@ -7,6 +7,11 @@ plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
+# fnm https://github.com/Schniz/fnm
+# manages node therefore corepack and pnpm etc
+export PATH=/home/$USER/.fnm:$PATH
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
+
 
 alias escalate="/Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add"
 alias deescalate="/Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove"

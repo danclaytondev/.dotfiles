@@ -34,3 +34,24 @@ if [ ! -e ~/.config/nvim/autoload/plug.vim ]; then
 fi
 
 nvim --headless +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
+
+echo "\nSetting up node (fnm)"
+# fnm should be installed by brew
+
+if ! command -v node > /dev/null 2>&1; then
+  echo "\nInstalling Node LTS"
+  eval "$(fnm env)"
+  fnm install --lts
+  export PATH=/home/$USER/.fnm:$PATH
+  eval "$(fnm env)"
+fi
+
+if ! command -v pnpm > /dev/null 2>&1; then
+  echo "\nInstalling pnpm"
+  # corepack pnpm broken at the minute, need to pin to 10.0.0
+  # https://github.com/nodejs/corepack/issues/612
+  corepack prepare pnpm@10.0.0 --activate
+  corepack use pnpm
+fi
+
+echo "\nAll done! Hope that worked. :)"
