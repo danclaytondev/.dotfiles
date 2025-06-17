@@ -1,10 +1,10 @@
 {
     // Font
-    "editor.fontFamily": "'Fira Code', Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fantasque Sans Mono', Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.lineHeight": 1.9,
-    // Colours
+    "terminal.integrated.fontSize": 18,
     "workbench.colorTheme": "One Dark Pro",
     
     // Code Suggestions
@@ -48,5 +48,5 @@
 },
 "files.associations": {
     "*.tmpl": "html"
-  }
+},
 }
