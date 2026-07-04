@@ -3,11 +3,7 @@
 
 `install.sh` installs dependencies in an idempotent manner, including homebrew.
 
-`link-dotfiles.sh` sets up the symlinks for the dotfiles, including for vscode which is the awkward one.
-
-This assumes zsh and oh-my-zsh are already up and running.
-
-I haven't included a brew file, I can install things as I need them to avoid bloat, or maybe even try using [pkgx](https://pkgx.sh/).
+`link-dotfiles.sh` sets up the symlinks for the dotfiles.
 
 ```
 git clone --recursive  https://github.com/danclaytondev/.dotfiles.git ~/.dotfiles

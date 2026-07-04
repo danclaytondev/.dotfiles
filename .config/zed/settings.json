@@ -1,0 +1,55 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "vim_mode": true,
+  "format_on_save": "off",
+  "project_panel": {
+    "dock": "right"
+  },
+  "buffer_font_features": {
+    "calt": true
+  },
+  "icon_theme": "Zed (Default)",
+  "terminal": {
+    "font_size": 18.0
+  },
+  "base_keymap": "VSCode",
+  "buffer_font_fallbacks": [
+    "Monaco",
+    "Courier New",
+    "monospace"
+  ],
+  "buffer_font_family": "Fantasque Sans Mono",
+  "file_types": {
+    "html": [
+      "*.tmpl"
+    ]
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 18.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}

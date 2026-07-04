@@ -32,9 +32,10 @@ create_symlink .zprofile
 #git
 create_symlink .gitconfig
 
-# vscode
-ln -sf $(pwd)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -sf $(pwd)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+# zed
+mkdir -p $HOME/.config/zed
+create_symlink .config/zed/settings.json
+create_symlink .config/zed/keymap.json
 
 
 
