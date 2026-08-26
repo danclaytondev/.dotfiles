@@ -5,3 +5,8 @@
 	excludesfile = ~/.dotfiles/.gitignore_global
 [alias]
 	undo = reset --mixed HEAD^
+
+# Identity lives here so the same .gitconfig works on the work and personal
+# machines. Untracked, created by link-dotfiles.sh.
+[include]
+	path = ~/.gitconfig.local

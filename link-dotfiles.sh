@@ -37,5 +37,12 @@ mkdir -p $HOME/.config/zed
 create_symlink .config/zed/settings.json
 create_symlink .config/zed/keymap.json
 
-
-
+# Git identity is per-machine, so it is not tracked. Leave an existing one alone.
+if [ ! -f "$HOME/.gitconfig.local" ]; then
+    echo "\nCreating ~/.gitconfig.local - fill in your name and email"
+    cat > "$HOME/.gitconfig.local" <<'EOF'
+[user]
+	name =
+	email =
+EOF
+fi
