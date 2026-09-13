@@ -39,10 +39,20 @@ create_symlink .config/zed/keymap.json
 
 # Git identity is per-machine, so it is not tracked. Leave an existing one alone.
 if [ ! -f "$HOME/.gitconfig.local" ]; then
-    echo "\nCreating ~/.gitconfig.local - fill in your name and email"
+    echo "\nCreating ~/.gitconfig.local - fill in name and email"
     cat > "$HOME/.gitconfig.local" <<'EOF'
 [user]
-	name =
+	name = Dan Clayton
 	email =
 EOF
 fi
+
+echo "\nNeovim setup"
+# vim-plug
+if [ ! -e ~/.config/nvim/autoload/plug.vim ]; then
+  printf "\nInstalling vim-plug"
+  curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+nvim --headless +PlugInstall +PlugUpdate '+PlugClean!' +UpdateRemotePlugins +qall

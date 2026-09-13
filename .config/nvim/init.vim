@@ -11,6 +11,6 @@ call plug#end()
 set number
 highlight LineNr ctermfg=grey
 
-colorscheme onedark
+silent! colorscheme onedark
 
 
