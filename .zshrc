@@ -33,7 +33,7 @@ compinit() {
 source $ZSH/oh-my-zsh.sh
 
 # fnm https://github.com/Schniz/fnm
-# manages node therefore corepack and pnpm etc
+# manages node 
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
 
 
@@ -84,3 +84,7 @@ zstyle ':completion:*' menu select
 
 # For kubectl krew plugins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+ff() {
+  aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+}
